@@ -23,6 +23,6 @@ java -jar todo-0.0.1-SNAPSHOT.jar
 H2 database
 CREATE TABLE TASK(ID INT PRIMARY KEY, NAME VARCHAR(255), ISCOMPLETE BOOLEAN );
 
-ToDo:
-All the rest calls works perfectly with post man
-through UI there is an issue. The Model value sent from the controller is updated only when page is refreshed.
+Pending ToDo:
+1. Validation
+2. CSS
