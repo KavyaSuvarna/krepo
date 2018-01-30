@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8"></meta>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+  <title>My AngularJS App</title>
+  <link rel="stylesheet" href="../bower_components/html5-boilerplate/dist/css/normalize.css"></link>
+  <link rel="stylesheet" href="../bower_components/html5-boilerplate/dist/css/main.css"></link>
+  <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet" media="screen"></link>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"></link>
+  <link rel="stylesheet" href="../app.css" ></link>
+
+</head>
+<body ng-app="todoApp" ng-controller="todoController">
+  <div class="header">ToDo List
+  	<ul id="menu">
+    	<button class="btn btn-info" ng-click="allTasks()">All Tasks</button>
+    	<button class="btn btn-danger" ng-click="pendingTasks()">Pending Tasks</button>
+    	<button class="btn btn-success" ng-click="completedTasks()">Completed Tasks</button>
+  	</ul>
+  	<div id="addDiv">
+      	<input id="inputTask" ng-model="newTask" type="text" placeholder="Enter task name"></input>
+      	<button class="btn btn-primary" ng-click="addTask()">Add Task</button>
+  	</div>
+  	
+      	<ul id="ultaskList" >  
+          <li ng-repeat="task in tasks.data">
+          <input type="checkbox" ng-checked="task.iscomplete" ng-click="taskComplete(task.id)">
+          {{task.taskName}}</<input>
+          <i class="glyphicon glyphicon-trash" ng-click=deleteTask(task.id)></i></li>
+          </ul>
+    
+  </div>
+    <script src="http://cdn.jsdelivr.net/webjars/angularjs/1.3.8/angular.min.js"></script>
+  	<script src="../app.js" ></script>
+</body>
+</html>
