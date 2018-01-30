@@ -2,46 +2,49 @@
 
 
 .header {
-  width:50%;
-  background-color: grey;
+  background-color: #c0c0c0;
   border-radius: 25px; 
-  margin-right:20px;
+  margin-right:25%;
+  margin-left:25%;
   padding:20px 20px;
-  color: white;
+  color: #808080;
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
+  
 }
 
-ul#menu{
-  margin-top:20px;
+input::placeholder {
+  color: #c0c0c0;
+  font-size:13px;
+  font-style:italic;
+  font-weight: normal;
 }
 
-a { 
-  text-decoration : none;
-   color :  white;
-   }
-
-#addDiv{
-	margin-left:30px;
+input{
+	font-size:18px;
+	font-family: sans-serif;
+	font-weight: normal;
 }
 
-#inputTask{
-  height:40px;
+ul#ultaskList{
+  list-style-type: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-color:#808080;
+  font-weight: normal;
  
 }
 
 
-ul#ultaskList{
-  list-style-type: none;
-  font-size: 15px;
-  width:50%;
-}
 ul#ultaskList li{
-		display : block;
-		padding:8px;
-		margin:5px;
-		border : 1px solid grey;
-  }
+	margin:5px;
+	border : 1px solid grey;
+	padding: 5px;
+	text-align:left;
+	
+	
+	
+}
 
   
