@@ -13,9 +13,8 @@ STS / VSCode , Nodejs , any in memory
 
 Used:
 1.Angular JS
-2. Thyme leaf template
-3. Spring boot
-4.H2
+2. Spring boot
+3.H2
 
 mvn clean install
 java -jar todo-0.0.1-SNAPSHOT.jar
